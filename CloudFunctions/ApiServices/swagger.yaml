@@ -1,0 +1,457 @@
+openapi: 3.0.2
+info:
+  title: Distributer
+  version: 0.0.2
+  description: distributer
+
+servers:
+  - url: 'https://ec80e471.jp-tok.apigw.appdomain.cloud/distributer/'
+    description: 'IBM cloud functions'
+
+paths:
+  /shelters:
+    get:
+      summary: get shelters list from shelters DB
+      parameters:
+        - $ref: '#/components/parameters/x-ibm-client-id'
+        - $ref: '#/components/parameters/x-ibm-client-secret'
+      responses:
+        "200":
+          description: success
+          content:
+            'application/json':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/shelter'
+        default:
+          description: error
+      tags: 
+        - shelters
+    post:
+      summary: add shelter to shelters DB
+      parameters:
+        - $ref: '#/components/parameters/x-ibm-client-id'
+        - $ref: '#/components/parameters/x-ibm-client-secret'
+      requestBody:
+        content:
+          application/json:
+            schema: 
+              $ref: '#/components/schemas/shelter'
+      responses:
+        "200":
+          description: success
+        default:
+          description: error
+      tags:
+        - shelters
+
+  /users:
+    get:
+      summary: get users list from users DB
+      parameters:
+        - $ref: '#/components/parameters/x-ibm-client-id'
+        - $ref: '#/components/parameters/x-ibm-client-secret'
+      responses:
+        "200":
+          description: success
+          content:
+            'application/json':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/user'
+        default:
+          description: error
+      tags:
+        - users
+    post:
+      summary: add user to users DB
+      parameters:
+        - $ref: '#/components/parameters/x-ibm-client-id'
+        - $ref: '#/components/parameters/x-ibm-client-secret'
+      requestBody:
+        content:
+          application/json:
+            schema: 
+              $ref: '#/components/schemas/user'
+      responses:
+        "200":
+          description: success
+        default:
+          description: error
+      tags:
+        - users
+
+  /supplies:
+    get:
+      summary: get supplies list from supplies DB
+      parameters:
+        - $ref: '#/components/parameters/x-ibm-client-id'
+        - $ref: '#/components/parameters/x-ibm-client-secret'
+      responses:
+        "200":
+          description: success
+          content:
+            'application/json':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/supply'
+        default:
+          description: error
+      tags:
+        - supplies
+    post:
+      summary: add supply to supplies DB
+      parameters:
+        - $ref: '#/components/parameters/x-ibm-client-id'
+        - $ref: '#/components/parameters/x-ibm-client-secret'
+      requestBody:
+        content:
+          application/json:
+            schema: 
+              $ref: '#/components/schemas/supply'
+      responses:
+        "200":
+          description: success
+        default:
+          description: error
+      tags:
+        - supplies
+  
+  /requests:
+    get:
+      summary: get requests list from requests DB
+      parameters:
+        - $ref: '#/components/parameters/x-ibm-client-id'
+        - $ref: '#/components/parameters/x-ibm-client-secret'
+      responses:
+        "200":
+          description: success
+          content:
+            'application/json':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/request'
+        default:
+          description: error
+      tags:
+        - requests
+    post:
+      summary: add request to requests DB
+      parameters:
+        - $ref: '#/components/parameters/x-ibm-client-id'
+        - $ref: '#/components/parameters/x-ibm-client-secret'
+      requestBody:
+        content:
+          application/json:
+            schema: 
+              $ref: '#/components/schemas/request'
+      responses:
+        "200":
+          description: success
+        default:
+          description: error
+      tags:
+        - requests
+
+  /calc:
+    post:
+      summary: calculate distributions
+      parameters:
+        - $ref: '#/components/parameters/x-ibm-client-id'
+        - $ref: '#/components/parameters/x-ibm-client-secret'
+      requestBody:
+        content:
+          application/json:
+            schema: 
+              type: object
+              properties:
+                shelterId: 
+                  type: string
+                  format: uuid
+      responses:
+        "200":
+          description: success
+          content:
+            'application/json':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/distribution'
+        default:
+          description: error
+
+  /categories/main:
+    get:
+      summary: get main categories in supplies
+      parameters:
+        - $ref: '#/components/parameters/x-ibm-client-id'
+        - $ref: '#/components/parameters/x-ibm-client-secret'
+      responses:
+        "200":
+          description: success
+          content:
+            'application/json':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/mainCategory'
+        default:
+          description: error
+      tags:
+        - categories
+  /categories/sub:
+    get:
+      summary: get sub categories in supplies (not need)
+      parameters:
+        - $ref: '#/components/parameters/x-ibm-client-id'
+        - $ref: '#/components/parameters/x-ibm-client-secret'
+      responses:
+        "200":
+          description: success
+          content:
+            'application/json':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/subCategory'
+        default:
+          description: error
+      tags:
+        - categories
+
+  /categories/supplies:
+    get:
+      summary: get supplies list in the category
+      parameters:
+        - $ref: '#/components/parameters/x-ibm-client-id'
+        - $ref: '#/components/parameters/x-ibm-client-secret'
+        - in: query
+          name: mainCategoryId
+          schema:
+            type: string
+          required: true
+      responses:
+        "200":
+          description: success
+          content:
+            'application/json':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/supply'
+        default:
+          description: error
+      tags:
+        - categories  
+
+components:
+  schemas:
+    user:
+      type: object
+      properties:
+        _id:
+          type: string
+          format: uuid
+        _rev:
+          type: string
+          format: uuid
+        name: 
+          type: string
+        zipcode:
+          type: string
+        address:
+          type: string
+        email:
+          type: string
+          format: email
+        phone:
+          type: string
+        latlng:
+          type: array
+          items:
+            type: number
+            format: float
+          minItems: 2
+        family:
+          type: array
+          items:
+            type: object
+            properties:
+              gender:
+                type: string
+              age:
+                type: number
+              status:
+                type: array
+                items: 
+                  type: string
+        remarks:
+          type: string
+        shelterId:
+          type: string
+          format: uuid
+
+    shelter:
+      type: object
+      properties:
+        _id:
+          type: string
+          format: uuid
+        _rev:
+          type: string
+          format: uuid
+        name:
+          type: string
+        zipcode:
+          type: string
+        address:
+          type: string
+        email:
+          type: string
+          format: email
+        phone:
+          type: string
+        latlng:
+          type: array
+          items:
+            type: number
+            format: float
+          minItems: 2
+
+    supply:
+      type: object
+      properties:
+        _id: 
+          type: string
+          format: uuid
+        _rev:
+          type: string
+          format: uuid
+        name:
+          type: string
+        mainCategory:
+          type: string
+        subCategory:
+          type: string
+        num:
+          type: integer
+        unit:
+          type: string
+        shelterId:
+          type: string
+          format: uuid
+        priority:
+          type: object
+        image: 
+          type: string
+          format: url
+        description:
+          type: string
+
+    request:
+      type: object
+      properties:
+        _id:
+          description: request id (unique)
+          type: string
+          format: uuid
+        _rev:
+          type: string
+          format: uuid
+        userId:
+          type: string
+          format: uuid
+        supplyId:
+          type: string
+          format: uuid
+        date:
+          type: string
+          format: date-time
+        num:
+          type: integer
+        acceptedNum: 
+          type: integer
+        status:
+          type: string
+    
+    distribution:
+      type: object
+      properties:
+        _id:
+          description: distribution id (unique)
+          type: string
+          format: uuid
+        _rev:
+          type: string
+          format: uuid
+        userId: 
+          type: string
+          format: uuid
+        supplyId: 
+          type: string
+          format: uuid
+        date: 
+          type: string
+          format: date-time
+        num: 
+          type: integer
+        shelterId: 
+          type: string
+          format: uuid
+        status:
+          type: string
+
+    mainCategory:
+      type: object
+      properties:
+        _id:
+          type: string
+          format: uuid
+        _rev:
+          type: string
+          format: uuid
+        name:
+          type: string
+
+    subCategory:
+      type: object
+      properties:
+        _id:
+          type: string
+          format: uuid
+        _rev:
+          type: string
+          format: uuid
+        name:
+          type: string
+        mainCategoryId:
+          description: id of parent main category
+          type: string
+          format: uuid
+        
+
+      
+        
+
+
+  parameters:
+    x-ibm-client-id:
+      in: header
+      name: X-IBM-Client-Id
+      schema:
+        type: string
+        format: uuid
+      required: true
+    x-ibm-client-secret:
+        in: header
+        name: X-IBM-Client-Secret
+        schema:
+          type: string
+          format: uuid
+        required: true
+
+

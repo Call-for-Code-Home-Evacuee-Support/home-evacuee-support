@@ -1,0 +1,7797 @@
+{
+  "intents": [
+    {
+      "intent": "recognize_address",
+      "examples": [
+        {
+          "text": "住所は国分寺市南町2-4-1です"
+        },
+        {
+          "text": "住所は国分寺市南町2丁目1-3です"
+        },
+        {
+          "text": "住所は東京都国分寺市北町1丁目2−10,アパートの301号室です"
+        },
+        {
+          "text": "場所は国分寺市泉町3丁目10番地の5です"
+        },
+        {
+          "text": "東京都国分寺市東本町1-23-4"
+        },
+        {
+          "text": "東京都国分寺市北町2丁目の18−7に住んでいます"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "recognize_supply_num",
+      "examples": [
+        {
+          "text": "3人前"
+        },
+        {
+          "text": "4つください"
+        },
+        {
+          "text": "1つ欲しいです"
+        },
+        {
+          "text": "2人分"
+        },
+        {
+          "text": "3人分ください"
+        },
+        {
+          "text": "1人分で結構です"
+        },
+        {
+          "text": "4人分欲しいです"
+        },
+        {
+          "text": "3人分ほしいです"
+        },
+        {
+          "text": "2人前ください"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "recognize_zipcode",
+      "examples": [
+        {
+          "text": "郵便番号は * です"
+        },
+        {
+          "text": "郵便番号185-0002"
+        },
+        {
+          "text": "185-0003"
+        },
+        {
+          "text": "郵便番号は、185-0022"
+        },
+        {
+          "text": "185-0014が郵便番号です"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "recognize_phone_number",
+      "examples": [
+        {
+          "text": "番号は090-6388-6701です"
+        },
+        {
+          "text": "080-4120-3239です"
+        },
+        {
+          "text": "03-3714-5231です"
+        },
+        {
+          "text": "3874-9876です"
+        },
+        {
+          "text": "電話番号は * です"
+        },
+        {
+          "text": "080-4109-3237です"
+        },
+        {
+          "text": "電話番号は03-3314-5223です"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "recognize_shelter",
+      "examples": [
+        {
+          "text": "第二中学校だと思います"
+        },
+        {
+          "text": "近くに第一小学校があります"
+        },
+        {
+          "text": "第二小学校です"
+        },
+        {
+          "text": "国分寺市立第七小学校です"
+        },
+        {
+          "text": "第十小学校が近くにあります"
+        },
+        {
+          "text": "国分寺市立第三中学校"
+        },
+        {
+          "text": "国分寺高校が歩いて五分のところにあります"
+        },
+        {
+          "text": "すぐ近くに第六小学校があります"
+        },
+        {
+          "text": "第八小学校の目の前です"
+        },
+        {
+          "text": "第五中学校の近所に住んでます"
+        },
+        {
+          "text": "第四中学校が近いと思います"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "recognize_family_num",
+      "examples": [
+        {
+          "text": "3人です"
+        },
+        {
+          "text": "1人です"
+        },
+        {
+          "text": "4名です"
+        },
+        {
+          "text": "2人います"
+        },
+        {
+          "text": "家族は3人です"
+        },
+        {
+          "text": "いません"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "recognize_supply",
+      "examples": [
+        {
+          "text": "食料が足りません"
+        },
+        {
+          "text": "服がほしいです"
+        },
+        {
+          "text": "水がほしいです"
+        },
+        {
+          "text": "水が必要です"
+        },
+        {
+          "text": "子供用の服はありますか"
+        },
+        {
+          "text": "簡易トイレはありますか？"
+        },
+        {
+          "text": "毛布を下さい"
+        },
+        {
+          "text": "マスクがほしいです"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "recognize_name",
+      "examples": [
+        {
+          "text": "こいけです"
+        },
+        {
+          "text": "* です"
+        },
+        {
+          "text": "* といいます"
+        },
+        {
+          "text": "あらいです"
+        },
+        {
+          "text": "名前は * です"
+        },
+        {
+          "text": "私の名前は * です"
+        },
+        {
+          "text": "私は *"
+        },
+        {
+          "text": "僕は * です"
+        },
+        {
+          "text": "私は * です"
+        },
+        {
+          "text": "高橋です"
+        },
+        {
+          "text": "やまもとです"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "zipcode",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "1850036",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "1850003",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "1858502",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "1850002",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "1850004",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "1850005",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "1850011",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "1850013",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "1850014",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "1850022",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "1850023",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "1850032",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "1850034",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "1850035",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "address_block",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "3丁目",
+          "synonyms": [
+            "3の"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2丁目",
+          "synonyms": [
+            "2の"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "1丁目",
+          "synonyms": [
+            "1の"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "4丁目",
+          "synonyms": [
+            "4の"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "6丁目",
+          "synonyms": [
+            "6の"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "5丁目",
+          "synonyms": [
+            "5の"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "name_last",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "ゆうり",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ゆうすけ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たかし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たかこ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たいち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しょう",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かなこ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ようじ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "のぞみ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たつや",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みのり",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひろたか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひろし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひなこ",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Column1",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Column2",
+          "synonyms": [
+            "Column12",
+            "Column11",
+            "Column10",
+            "Column9",
+            "Column8",
+            "Column7",
+            "Column6",
+            "Column5",
+            "Column4",
+            "Column3"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "sys-number",
+      "values": []
+    },
+    {
+      "entity": "name_first",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "あそう",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あだち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あべ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あまの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あまみや",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あやせ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あやのこうじ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あらい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あらがき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あらかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あらき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あらた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あらや",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ありが",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ありた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ありま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ありむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あんざい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あんどう",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いいじま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いいだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いいづか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いいの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いがらし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いがわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いぐち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いけうち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いけがみ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いけだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いけたに",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いけはた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いけもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いさき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いざわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いしい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いしがき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いしかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いしくら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いしぐろ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いしざか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いしざき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いしざわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いしだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いしづか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いしの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いしばし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いしはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いしまる",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いしもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いじゅういん",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いしわたり",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いずみ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いその",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いそべ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いそむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いたがき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いたくら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いたの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いたばし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いたみ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いちかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いちき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いちだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いちはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いちむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いで",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いとう",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いながき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いなだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いなば",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いぬい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いのうえ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いのまた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いまい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いまいずみ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いまがわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いまだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いまにし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いまの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いまむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いりえ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いわい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いわき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いわさ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いわさき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いわさわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いわした",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いわせ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いわた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いわたに",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いわなが",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いわぶち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いわま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いわむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "いわもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うえき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うえすぎ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うえた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うえだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うえの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うえはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うえまつ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うえむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うさみ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うじいえ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うすい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うだがわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うただ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うちだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うちの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うちみ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うちむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うちやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うつのみや",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うみの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うめざわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うめだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うめづ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うめはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うめむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うめもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うらた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "うらの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "えがわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "えぐち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "えざき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "えとう",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "えのもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "えはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "えびす",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "えびはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "えもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "えんどう",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おいかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおいし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおいずみ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおうち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおうら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおえ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおくぼ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおくま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおくら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおご",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおこうち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおさか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおさき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおさわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおじ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおした",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおしま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおしろ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおだか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおたき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおたけ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおたに",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおつ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおつか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおつき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおつぼ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおとも",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおにし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおにわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおぬき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおぬま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおば",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおはし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおはた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおばやし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおひら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおもり",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおや",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おおわだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おかざき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おがさわら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おかじま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おかだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おがた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おかの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おかべ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おがみ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おかむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おかもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おかやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おがわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おぎ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おきた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おぎの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おく",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おくだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おぐち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おくでら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おくぬき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おくの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おくむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おくやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おぐら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おぐり",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おざき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おざわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おだじま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おちあい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おのだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おのでら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おばた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "おんだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かいおんじ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かが",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かがわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かけい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かげやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かさい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かさはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かざま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かしい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かしま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かしわぎ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かしわら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かじわら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かすが",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かせ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かたおか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かたぎり",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かたせ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かたひら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かたやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かつだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かつぢ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かつまた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かつらやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かとう",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かどた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かどたに",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かどわき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かない",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かなしろ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かなた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かなまる",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かなもり",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かなや",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かなやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かねこ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かねざわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かねだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かのう",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かまた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かみき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かみじょう",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かみの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かみや",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かみやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かめい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かめだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かめやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "からさわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かわい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かわうち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かわかみ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かわぐち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かわごえ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かわさき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かわしま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かわせ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かわぞえ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かわた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かわなか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かわにし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かわの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かわはた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かわばた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かわはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かわべ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かわむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かわもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かんざき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かんじや",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かんだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かんの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "かんばら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "きうち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "きかわだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "きくた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "きくち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "きし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "きしだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "きしべ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "きしもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "きた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "きだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "きたかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "きたがわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "きたざわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "きたじま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "きただ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "きたの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "きたはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "きたむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "きたやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "きっかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "きど",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "きのした",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "きはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "きむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "きもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "きよた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "きよの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くさかべ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くさの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くさむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くすのき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くすもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くどう",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くぼ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くぼた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くぼづか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くまい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くまがや",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くまくら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くまさわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くまだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くめ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くらた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くらもち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くらもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くりた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くりばやし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くりはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くりやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くるま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くろいわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くろかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くろき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くろさき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くろさわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くろた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くろたに",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くわた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "くわばら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "げきだん",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こいけ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こいずみ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こいち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こいで",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こうの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こうべ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こうもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こが",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こくぶん",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こくぼ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こざか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こじま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こすぎ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こすげ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こぜき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ごだい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こだか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こたに",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こだま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こでら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ごとう",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こにし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こぬま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こばやし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こひなた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こひら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こほり",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こまち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こまつ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ごみ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こみね",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こみや",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こむろ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こもり",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こやなぎ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こん",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こんどう",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "こんの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "さいとう",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "さえき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "さかい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "さかがみ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "さかきばら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "さかぐち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "さかした",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "さかた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "さかもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "さがわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "さくま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "さくらい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "さくらだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "さこ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ささがわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ささき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ささはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "さだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "さたけ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "さとう",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "さなだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "さわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "さわい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "さわじり",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "さわだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "さわむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "さんし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しいな",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しおざわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しおた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しおたに",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しおみ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しおや",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しが",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しかてぶくろ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しげまつ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ししど",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しながわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しのざき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しのだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しのやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しばさき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しばざき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しばた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しばやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しまざき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しまだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しまづ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しまぶくろ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しまむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しまもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しみず",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しもかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しもだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しもむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しもやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しゃく",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しょうじ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しらい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しらいし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しらかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しらき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しらとり",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しろさき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しろた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "しんどう",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "じんぼ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "すえきち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "すえなが",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "すが",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "すがい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "すがさわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "すがぬま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "すがの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "すがや",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "すがわら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "すぎうら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "すぎした",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "すぎた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "すぎの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "すぎはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "すぎむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "すぎもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "すぎやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "すずき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "すだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "すどう",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "すなかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "すみ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "すわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "せお",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "せがわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "せき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "せきぐち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "せきね",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "せきや",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "せと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "せとうち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "せりざわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "せんだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "そが",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "そとやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "そね",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "そのだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "そめや",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たいら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たうえ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たかい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たかお",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たかおか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たかぎ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たかくら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たかさき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たかさわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たかしま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たかだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たかなし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たかの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たかはし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たかはた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たかばた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たかはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たかまつ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たかみ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たかむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たかや",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たかやなぎ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たかやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たがわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たきがわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たきぐち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たきざわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たきた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たきもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たぐち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たけ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たけい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たけうち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たけした",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たけだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たけなか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たけはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たけむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たけもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たざき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たざわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たじま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たじり",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たしろ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ただ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たちいし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たちかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たちばな",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たどころ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たなか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たなべ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たに",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たにかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たにぐち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たにむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たにもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たばた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たぶち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たべ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たまい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たまき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たまだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たまやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たんの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "たんば",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ちば",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "つかだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "つかはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "つかもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "つがわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "つじ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "つしま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "つじもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "つだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "つちだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "つちはし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "つちや",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "つつい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "つづき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "つつみ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "つぼい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "つるおか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "つるた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "でぐち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "てじま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "てづか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "てらい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "てらお",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "てらおか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "てらさわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "てらしま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "てらじま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "てらだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "てらにし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "てらもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "てらわき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "てるい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "どい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "とがし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "とくしげ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "とくた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "とくなが",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "とじ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "とだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "とづか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "とみおか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "とみさわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "とみた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "とみなが",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "とみやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ともさか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "とよしま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "とよた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "とよはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "とりい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ないとう",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なかい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ながい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なかお",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ながお",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なかおか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ながおか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なかがわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なかごえ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ながさき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なかざと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なかざわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ながさわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なかしま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なかじま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ながしま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ながせ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なかぞの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なかた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ながた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なかたに",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なかづか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ながとも",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なかにし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なかね",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なかの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ながの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ながはま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なかばやし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なかはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なかむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なかもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ながや",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なかやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ながやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なす",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ななせ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なませ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なまた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なみき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なりた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なるせ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なるみ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なんば",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "なんぶ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "にいがき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "にいむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "にし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "にしあき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "にしい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "にしうら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "にしお",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "にしおか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "にしかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "にしざわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "にしじま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "にしだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "にしの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "にしはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "にしむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "にしもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "にしや",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "にしやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "にしわき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "にのみや",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ぬまた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ねぎし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ねもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "のがみ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "のぎわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "のぐち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "のざき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "のざわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "のじま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "のだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "のなか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "のはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "のむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "のもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "のろ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はが",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はぎわら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はしぐち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はしづめ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はしの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はしもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はせがわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はせべ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はたけ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はたなか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はたの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はたやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はっとり",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はなおか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はなだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ばば",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はまぐち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はまさき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はまだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はまの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はまもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はやかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はやさか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はやし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はやしだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はやみ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はらぐち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はらだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ばん",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "はんだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ばんとう",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひがし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひぐち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひさの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひだか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひとと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひのした",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひびの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひよし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひらい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひらお",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひらおか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひらが",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひらさわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひらた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひらつか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひらの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひらばやし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひらまつ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひらやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひろかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひろすえ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひろせ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ひろた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふかい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふかざわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふかだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふかや",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふきいし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふきこし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふくい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふくおか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふくざわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふくし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふくしま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふくだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふくち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふくなが",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふくはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふくもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふくやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふじ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふじい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふじおか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふじかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふじき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふじさき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふじさわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふじしま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふじた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふじの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふじむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふじもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふじもり",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふじやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふじわら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふせ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふなばし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふるかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふるさわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふるた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふるたに",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふるや",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ふるやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ほうじょう",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ほさか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ほし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ほしの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ほそい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ほそかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ほそだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ほその",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ほそや",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ほそやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ほった",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ほとはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ほり",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ほりい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ほりうち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ほりかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ほりきた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ほりぐち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ほりこし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ほんじょう",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ほんだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ほんま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ほんむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ほんやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まえかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まえじま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まえだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まえの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まきせ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まきた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まきの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まさき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ますい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ますおか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ますだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まちだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まつい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まつうら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まつお",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まつおか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まつかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まつき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まつざき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まつざわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まつした",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まつしま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まつだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まつたに",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まつなが",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まつの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まつばら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まつむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まつもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まつやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まなべ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まや",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まるた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "まるやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みうら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みかみ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みさき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みさわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みしま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みずかみ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みずかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みずぐち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みずしま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みずた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みずたに",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みずの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みぞぐち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みたに",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みつい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みつしま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みなかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みなと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みなみ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みね",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みはし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みふね",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みやうち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みやかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みやぎ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みやけ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みやさか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みやざき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みやさこ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みやざと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みやざわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みやじ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みやした",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みやじま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みやた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みやの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みやはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みやべ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みやもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みやわき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みよし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "みわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "むとう",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "むらい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "むらおか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "むらかみ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "むらき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "むらせ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "むらた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "むらなか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "むらの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "むらまつ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "むらやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "めぐろ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "もうり",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "もぎ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "もちづき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "もとはし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ももせ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "もり",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "もりい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "もりおか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "もりかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "もりぐち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "もりした",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "もりしま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "もりた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "もりなが",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "もりもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "もりや",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "もりやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "もりわき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やぎ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やくしょ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やぐち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やざわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やじま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やす",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やすい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やすだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やすなが",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やそだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やつだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やながわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やなぎ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やなぎさわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やなぎだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やなぎはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やなぎや",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やはぎ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やべ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やまうち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やまがた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やまがみ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やまかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やまぎし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やまぐち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やまざき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やました",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やましろ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やませ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やまだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やまと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やまなか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やまにし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やまね",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やまの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やまのうち",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やまむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やまもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ゆあさ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ゆうき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ゆーすけ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "よ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "よこい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "よこお",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "よこかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "よこた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "よこやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "よしい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "よしおか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "よしかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "よしざき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "よしざわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "よしだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "よしなが",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "よしの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "よしむら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "よしもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "よしわら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "よねくら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "よねざわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "よねだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "よねや",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "よねやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "よりた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ろっかく",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "わいずみ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "わかすぎ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "わかつき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "わかばやし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "わかまつ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "わかやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "わきた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "わだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "わたなべ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "わたべ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "やまおか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あいかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あいざわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あいだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あいば",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あいはら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あいぶ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あおい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あおき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あおさき",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あおの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あおやぎ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あおやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あかぎ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あかさか",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あかし",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あかしや",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あかばね",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あかまつ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あきた",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あきば",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あきもと",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あきやま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あくつ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あさい",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あさかわ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あさくら",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あさだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あさぬま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あさの",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あざま",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あさみ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あさり",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あしだ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "あしや",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": false
+    },
+    {
+      "entity": "shelter",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "第一中学校",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "第三中学校",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "第九小学校",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "東京経済大学",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "第一小学校",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "第三小学校",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "第八小学校",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "第二小学校",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "第四小学校",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "第五小学校",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "第六小学校",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "第十小学校",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "第四中学校",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "第五中学校",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "国分寺高校",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "第七小学校",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "第二中学校",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "response",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "わからない",
+          "synonyms": [
+            "知らない",
+            "うーん",
+            "わかんない",
+            "わからないです",
+            "知りません",
+            "不明です",
+            "わかりません",
+            "わかんないです"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "はい",
+          "synonyms": [
+            "そうです",
+            "うん",
+            "はーい",
+            "いえす",
+            "もちろん",
+            "そう",
+            "います",
+            "お願いします",
+            "ぜひ",
+            "是非"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "いいえ",
+          "synonyms": [
+            "いや",
+            "ううん",
+            "のー",
+            "ちがいます",
+            "ちがうよ",
+            "いません",
+            "結構です",
+            "大丈夫です"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "category",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "衣類",
+          "synonyms": [
+            "服",
+            "洋服",
+            "着るもの",
+            "下着",
+            "肌着"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "飲料",
+          "synonyms": [
+            "飲み物",
+            "水"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "食料",
+          "synonyms": [
+            "食べ物",
+            "食糧",
+            "食事",
+            "ご飯"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "生活用品",
+          "synonyms": [
+            "日用品",
+            "デイリー用品",
+            "生活必需品"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "supply",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "汚物処理剤",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "肌着S",
+          "synonyms": [
+            "下着S",
+            "Sサイズ",
+            "Sサイズの下着",
+            "小さい下着",
+            "小さい肌着",
+            "肌着Sサイズ"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "木炭",
+          "synonyms": [
+            "燃料",
+            "薪",
+            "燃やすもの"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "毛布",
+          "synonyms": [
+            "布団"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "保存用パン",
+          "synonyms": [
+            "パン",
+            "乾パン"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "保存水",
+          "synonyms": [
+            "水",
+            "水分",
+            "おみず"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "米粉クッキー",
+          "synonyms": [
+            "クッキー",
+            "お菓子"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "肌着M",
+          "synonyms": [
+            "Mサイズ",
+            "Mサイズの下着",
+            "下着M",
+            "肌着Mサイズ"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "肌着L",
+          "synonyms": [
+            "Lサイズ",
+            "Lサイズの下着",
+            "下着L",
+            "大きい肌着",
+            "大きい下着",
+            "肌着Lサイズ"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "調製粉乳",
+          "synonyms": [
+            "粉ミルク",
+            "ミルク"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "即席麺",
+          "synonyms": [
+            "カップラーメン",
+            "カップ麺",
+            "インスタント麺",
+            "麺類",
+            "麺"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "手指消毒液",
+          "synonyms": [
+            "アルコール",
+            "消毒液"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "簡易トイレ",
+          "synonyms": [
+            "トイレ",
+            "組み立て式トイレ"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "アルファ米",
+          "synonyms": [
+            "お米",
+            "ご飯",
+            "米"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "おかず缶詰",
+          "synonyms": [
+            "缶詰",
+            "おかず"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "おかゆ",
+          "synonyms": [
+            "離乳食"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ガスボンベ",
+          "synonyms": [
+            "ガス",
+            "ボンベ",
+            "ガス缶"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "カセットコンロ",
+          "synonyms": [
+            "コンロ",
+            "火",
+            "ガスコンロ"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "トイレットペーパー",
+          "synonyms": [
+            "紙"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "なべ",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ハンドソープ",
+          "synonyms": [
+            "石鹸"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ブルーシート",
+          "synonyms": [
+            "敷物"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ボディシート",
+          "synonyms": [
+            "タオル",
+            "拭きもの",
+            "体拭くやつ",
+            "アルコールティッシュ",
+            "ティッシュ"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ほ乳瓶",
+          "synonyms": [
+            "ミルク瓶"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "マスク",
+          "synonyms": [
+            "フェイスガード"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "やかん",
+          "synonyms": [
+            "ケトル"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "address_city",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "小金井市",
+          "synonyms": [
+            "小金井"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "国分寺市",
+          "synonyms": [
+            "国分寺"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "立川市",
+          "synonyms": [
+            "立川"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "小平市",
+          "synonyms": [
+            "小平"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "address_town",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "北町",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "本多",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "本町",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "戸倉",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "光町",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "高木町",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "新町",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "西元町",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "西町",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "東元町",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "東戸倉",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "泉町",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "西恋ケ窪",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "南町",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "内藤",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "東恋ケ窪",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "日吉町",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "富士本",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "並木町",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    },
+    "from-sample": true
+  },
+  "webhooks": [
+    {
+      "url": "https://2d50f7e9.jp-tok.apigw.appdomain.cloud/watson/requests",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "そうですか。すみませんが、お調べの上もう一度おかけ直しください。"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1594357629868",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_10_1594187528452"
+      },
+      "conditions": "@response:いいえ",
+      "dialog_node": "node_5_1594358407018",
+      "previous_sibling": "node_1_1594358352355"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ありがとうございます。最寄りの避難所は $shelter ですね"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1594357629868",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1594190608193"
+      },
+      "conditions": "@response:はい || #recognize_shelter",
+      "dialog_node": "node_1_1594358352355"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "すみません、よくわかりませんでした"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1594188534089",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1594188534089"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_10_1594354517236",
+      "previous_sibling": "node_9_1594188616530"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ありがとうございます。電話番号は $phone_number ですね"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1594188534089",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1594357629868"
+      },
+      "conditions": "#recognize_phone_number || @sys-number",
+      "dialog_node": "node_9_1594188616530"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "よくわかりませんでした"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "ようこそ",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "ようこそ"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_2_1594187348419",
+      "previous_sibling": "node_9_1594187445029"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "そうでしたか。また何かありましたらご連絡下さい"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "ようこそ",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_10_1594187528452"
+      },
+      "conditions": "@response:いいえ",
+      "dialog_node": "node_9_1594187445029",
+      "previous_sibling": "node_4_1594086167519"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ありがとうございます。"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "ようこそ",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_10_1594257882101"
+      },
+      "conditions": "@response:はい",
+      "dialog_node": "node_4_1594086167519"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1594107548389",
+      "variable": "$zipcode",
+      "dialog_node": "slot_3_1594109388304"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1594188616530",
+      "variable": "$phone_number",
+      "dialog_node": "slot_6_1594188970690"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1594197156404",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1594197156429",
+      "previous_sibling": "handler_1_1594197156428"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1594197156404",
+      "context": {
+        "supply": "@supply"
+      },
+      "conditions": "@supply",
+      "event_name": "input",
+      "dialog_node": "handler_1_1594197156428"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1594358352355",
+      "variable": "$shelter",
+      "dialog_node": "slot_5_1594358942735"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1594189778838",
+      "variable": "$address_town",
+      "dialog_node": "slot_1_1594189835981",
+      "previous_sibling": "slot_2_1594189805597"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1594189778838",
+      "variable": "$address_block",
+      "dialog_node": "slot_7_1594189857408",
+      "previous_sibling": "slot_1_1594189835981"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1594189778838",
+      "variable": "$address_other",
+      "dialog_node": "slot_6_1594190055873",
+      "previous_sibling": "slot_7_1594189857408"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1594189778838",
+      "variable": "$address_city",
+      "dialog_node": "slot_2_1594189805597"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1594281705005",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1594281705050",
+      "previous_sibling": "handler_3_1594281705050"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "次の中から選んで下さい。水"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1594281705005",
+      "conditions": "@category:飲料",
+      "event_name": "filled",
+      "dialog_node": "handler_2_1594281730133",
+      "previous_sibling": "handler_10_1594281705050"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1594281705005",
+      "context": {
+        "category": "@category:飲料"
+      },
+      "conditions": "@category:飲料",
+      "event_name": "input",
+      "dialog_node": "handler_3_1594281705050"
+    },
+    {
+      "type": "slot",
+      "parent": "node_7_1594086425903",
+      "variable": "$name_first",
+      "dialog_node": "slot_1_1594086433974",
+      "previous_sibling": "response_1_1594088614597"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ありがとうございます。$name_first さんですね。"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1594086425903",
+      "conditions": "",
+      "dialog_node": "response_1_1594088614597"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "すみません、わかりませんでした"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1594256440688",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_10_1594256440688"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_2_1594256392752",
+      "previous_sibling": "node_10_1594256992171"
+    },
+    {
+      "type": "frame",
+      "title": "カテゴリの検索",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1594256440688",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_2_1594197098688"
+      },
+      "conditions": "#recognize_supply && @category && !@supply",
+      "dialog_node": "node_9_1594197249971",
+      "previous_sibling": "node_2_1594197098688"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "承知しました。"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1594256440688",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_10_1594187528452"
+      },
+      "conditions": "@response:いいえ",
+      "dialog_node": "node_10_1594256992171",
+      "previous_sibling": "node_9_1594197249971"
+    },
+    {
+      "type": "frame",
+      "title": "物資のリクエスト",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "承知いたしました。現在受付可能な物資として$supply があります。リクエストしますか？"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1594256440688",
+      "conditions": "#recognize_supply && @supply",
+      "dialog_node": "node_2_1594197098688"
+    },
+    {
+      "type": "standard",
+      "title": "待機",
+      "parent": "node_10_1594187528452",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "ようこそ"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_3_1594187856524"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1594190789344",
+      "variable": "$family_num",
+      "dialog_node": "slot_3_1594190894770"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "何市ですか？"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1594189805597",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1594189805616",
+      "previous_sibling": "handler_6_1594189805616"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1594189805597",
+      "context": {
+        "address_city": "@address_city"
+      },
+      "conditions": "@address_city",
+      "event_name": "input",
+      "dialog_node": "handler_6_1594189805616"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "ユーザ登録に失敗しました"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_7_1594277936544",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_10_1594257882101"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "response_2_1594277959661",
+      "previous_sibling": "response_2_1594277958581"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ありがとうございます。ユーザ登録が完了しました $result"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1594277936544",
+      "conditions": "$result",
+      "dialog_node": "response_2_1594277958581"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "郵便番号はわかりませんか？"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1594109388304",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1594109388307",
+      "previous_sibling": "handler_10_1594109388307"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1594109388304",
+      "context": {
+        "zipcode": "@zipcode"
+      },
+      "conditions": "@zipcode",
+      "event_name": "input",
+      "dialog_node": "handler_10_1594109388307"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_9_1594281841319",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1594281841342",
+      "previous_sibling": "handler_7_1594281841342"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "次の中から選んで下さい。なべ、やかん、トイレットペーパー、木炭、カセットコンロ、ガズボンベ、ほ乳瓶、手指消毒液、汚物処理剤、ブルーシート、簡易トイレ、毛布、ハンドソープ、マスク、ボディシート"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1594281841319",
+      "conditions": "@category:生活用品",
+      "event_name": "filled",
+      "dialog_node": "handler_1_1594281866777",
+      "previous_sibling": "handler_4_1594281841342"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1594281841319",
+      "context": {
+        "category": "@category:生活用品"
+      },
+      "conditions": "@category:生活用品",
+      "event_name": "input",
+      "dialog_node": "handler_7_1594281841342"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1594197267487",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1594197267500",
+      "previous_sibling": "handler_5_1594197267500"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "次の中から選んで下さい。アルファ米、パン、缶詰、即席麺、おかゆ、調製粉乳、米粉クッキー"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1594197267487",
+      "conditions": "@category:食料",
+      "event_name": "filled",
+      "dialog_node": "handler_9_1594281477203",
+      "previous_sibling": "handler_8_1594197267500"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1594197267487",
+      "context": {
+        "category": "@category:食料"
+      },
+      "conditions": "@category:食料",
+      "event_name": "input",
+      "dialog_node": "handler_5_1594197267500"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "すみません、よくわかりませんでした。"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1594189449889",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_8_1594189449889"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_4_1594354423266",
+      "previous_sibling": "node_5_1594354294734"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "住所がわからないのですね。承知しました。"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1594189449889",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1594190608193"
+      },
+      "conditions": "@response:わからない",
+      "dialog_node": "node_5_1594354294734",
+      "previous_sibling": "node_1_1594189778838"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ありがとうございます。住所は $address_city $address_town $address_block $address_other ですね"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1594189449889",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1594190608193"
+      },
+      "conditions": "#recognize_address",
+      "dialog_node": "node_1_1594189778838"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "郵便番号がわからないのですね。承知しました。"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1594186984395",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1594190608193"
+      },
+      "conditions": "@response:わからない",
+      "dialog_node": "node_6_1594188025158",
+      "previous_sibling": "node_1_1594107548389"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "すみません、よくわかりませんでした"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1594186984395",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1594186984395"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_2_1594354561868",
+      "previous_sibling": "node_6_1594188025158"
+    },
+    {
+      "type": "frame",
+      "title": "レスポンス",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "郵便番号は $zipcode ですね"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1594186984395",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_8_1594189449889"
+      },
+      "conditions": "#recognize_zipcode || @sys-number",
+      "dialog_node": "node_1_1594107548389"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "次の中から選んで下さい。肌着Lサイズ、肌着Mサイズ、肌着Sサイズ"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1594281776251",
+      "conditions": "@category:衣類",
+      "event_name": "filled",
+      "dialog_node": "handler_8_1594281800393",
+      "previous_sibling": "handler_4_1594281776275"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1594281776251",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1594281776275",
+      "previous_sibling": "handler_5_1594281776275"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1594281776251",
+      "context": {
+        "category": "@category:衣類"
+      },
+      "conditions": "@category:衣類",
+      "event_name": "input",
+      "dialog_node": "handler_5_1594281776275"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "すみません、よくわかりませんでした"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1594186452089",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_8_1594186452089"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_4_1594354481631",
+      "previous_sibling": "node_7_1594086425903"
+    },
+    {
+      "type": "frame",
+      "title": "レスポンス",
+      "parent": "node_8_1594186452089",
+      "metadata": {
+        "callout": {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "": ""
+          },
+          "result_variable": "webhook_result_1"
+        },
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1594188534089"
+      },
+      "conditions": "@response:はい || #recognize_name",
+      "dialog_node": "node_7_1594086425903"
+    },
+    {
+      "type": "standard",
+      "title": "家族人数の把握",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "一緒にいるご家族は何名ですか？"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1594257882101",
+      "conditions": "!$family_num",
+      "dialog_node": "node_4_1594190608193",
+      "previous_sibling": "node_9_1594357629868"
+    },
+    {
+      "type": "standard",
+      "title": "郵便番号の取得",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "次に郵便番号を教えて下さい"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1594257882101",
+      "conditions": "!$zipcode",
+      "dialog_node": "node_1_1594186984395",
+      "previous_sibling": "node_7_1594188534089"
+    },
+    {
+      "type": "standard",
+      "title": "最寄り避難所の取得",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "最寄りの避難所を把握するため、今住んでいる場所の近くに小学校、中学校、高校があれば教えてください"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1594257882101",
+      "conditions": "!$shelter",
+      "dialog_node": "node_9_1594357629868",
+      "previous_sibling": "node_8_1594189449889"
+    },
+    {
+      "type": "standard",
+      "title": "住所の取得",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "次に住所を教えて下さい"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1594257882101",
+      "conditions": "!$address_city",
+      "dialog_node": "node_8_1594189449889",
+      "previous_sibling": "node_1_1594186984395"
+    },
+    {
+      "type": "standard",
+      "title": "電話番号の取得",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "次に電話番号を教えて下さい"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1594257882101",
+      "conditions": "!$phone_number",
+      "dialog_node": "node_7_1594188534089",
+      "previous_sibling": "node_8_1594186452089"
+    },
+    {
+      "type": "standard",
+      "title": "個人情報の送信",
+      "parent": "node_10_1594257882101",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "way": "phone",
+            "type": "register_user",
+            "family_num": "$family_num",
+            "name_first": "$name_first",
+            "phone_number": "$phone_number",
+            "shelter_name": "$shelter"
+          },
+          "result_variable": "result"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1594193526375"
+      },
+      "dialog_node": "node_7_1594277936544",
+      "previous_sibling": "node_4_1594190608193"
+    },
+    {
+      "type": "standard",
+      "title": "名前の取得",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " あなたの名前を教えていただけませんか？"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1594257882101",
+      "conditions": "!$name_first || !$name_last",
+      "dialog_node": "node_8_1594186452089"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "何町ですか？"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_1_1594189835981",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1594189835983",
+      "previous_sibling": "handler_5_1594189835983"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1594189835981",
+      "context": {
+        "address_town": "@address_town"
+      },
+      "conditions": "@address_town",
+      "event_name": "input",
+      "dialog_node": "handler_5_1594189835983"
+    },
+    {
+      "type": "frame",
+      "parent": "node_3_1594258870568",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "type": "request_supply",
+            "supply_num": "$supply_num",
+            "supply_name": "$supply",
+            "phone_number": "$phone_number"
+          },
+          "result_variable": "result"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_10_1594256440688"
+      },
+      "conditions": "#recognize_supply_num",
+      "dialog_node": "node_5_1594258940747"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1594197098688",
+      "variable": "$supply",
+      "dialog_node": "slot_1_1594197156404",
+      "previous_sibling": "node_9_1594282702140"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "キャンセルですね。"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1594197098688",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_10_1594256440688"
+      },
+      "conditions": "@response:いいえ",
+      "dialog_node": "node_9_1594282702140",
+      "previous_sibling": "node_3_1594258870568"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "承知しました。何人分必要でしょうか？"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1594197098688",
+      "conditions": "@response:はい",
+      "dialog_node": "node_3_1594258870568"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "すみません、もう一度お願いします"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1594258957445",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1594258957457",
+      "previous_sibling": "handler_3_1594258957457"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1594258957445",
+      "context": {
+        "supply_num": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_3_1594258957457"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1594190055873",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1594190055876",
+      "previous_sibling": "handler_5_1594190055876"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1594190055873",
+      "context": {
+        "address_other": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_5_1594190055876"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_9_1594197249971",
+      "variable": "$category",
+      "dialog_node": "slot_10_1594281776251",
+      "previous_sibling": "slot_2_1594281705005"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_9_1594197249971",
+      "variable": "$category",
+      "dialog_node": "slot_2_1594281705005",
+      "previous_sibling": "slot_5_1594197267487"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_9_1594197249971",
+      "variable": "$category",
+      "dialog_node": "slot_9_1594281841319",
+      "previous_sibling": "slot_10_1594281776251"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_9_1594197249971",
+      "variable": "$category",
+      "dialog_node": "slot_5_1594197267487"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "リクエスト失敗しました"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1594258940747",
+      "conditions": "anything_else",
+      "dialog_node": "response_8_1594261760249",
+      "previous_sibling": "response_4_1594261759084"
+    },
+    {
+      "type": "slot",
+      "parent": "node_5_1594258940747",
+      "variable": "$supply_num",
+      "dialog_node": "slot_9_1594258957445",
+      "previous_sibling": "response_8_1594261760249"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "承知しました。 リクエスト完了です。 $result"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1594258940747",
+      "context": {},
+      "conditions": "$result",
+      "dialog_node": "response_4_1594261759084"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "では学校の名前を教えてください"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1594358942735",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1594358942745",
+      "previous_sibling": "handler_3_1594358942745"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1594358942735",
+      "context": {
+        "shelter": "@shelter"
+      },
+      "conditions": "@shelter",
+      "event_name": "input",
+      "dialog_node": "handler_3_1594358942745"
+    },
+    {
+      "type": "standard",
+      "title": "物資の確認（ループポイント）",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "何か必要な物資はありますか？"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1594193526375",
+      "conditions": "!@supply",
+      "dialog_node": "node_10_1594256440688"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "名字を教えて下さい"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_1_1594086433974",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1594086433985",
+      "previous_sibling": "handler_5_1594086433985"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1594086433974",
+      "context": {
+        "name_first": "@name_first"
+      },
+      "conditions": "@name_first",
+      "event_name": "input",
+      "dialog_node": "handler_5_1594086433985"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "すみません、もう一度お願いします"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1594190894770",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1594190894779",
+      "previous_sibling": "handler_9_1594190894779"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1594190894770",
+      "context": {
+        "family_num": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_9_1594190894779"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "何丁目ですか？"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_7_1594189857408",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1594189857413",
+      "previous_sibling": "handler_5_1594189857413"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1594189857408",
+      "context": {
+        "address_block": "@address_block"
+      },
+      "conditions": "@address_block",
+      "event_name": "input",
+      "dialog_node": "handler_5_1594189857413"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$family_num 名ですね。"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1594190608193",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1594277936544"
+      },
+      "conditions": "#recognize_family_num",
+      "dialog_node": "node_1_1594190789344"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "すみません、もう一度お願いします"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_6_1594188970690",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1594188970707",
+      "previous_sibling": "handler_4_1594188970707"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1594188970690",
+      "context": {
+        "phone_number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_4_1594188970707"
+    },
+    {
+      "type": "standard",
+      "title": "基本情報の取得",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "避難者の把握のため、まず基本情報ついてお伺いしたいと思います"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "digress_in": "does_not_return",
+      "dialog_node": "node_10_1594257882101",
+      "previous_sibling": "ようこそ"
+    },
+    {
+      "type": "standard",
+      "title": "必要物資情報の取得",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "次に物資についてお伺いしたいと思います。"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "",
+      "dialog_node": "node_9_1594193526375",
+      "previous_sibling": "node_10_1594257882101"
+    },
+    {
+      "type": "standard",
+      "title": "終了",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "それではサービスを終了します。また何かございましたらご連絡下さい"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "digress_in": "does_not_return",
+      "dialog_node": "node_10_1594187528452",
+      "previous_sibling": "node_9_1594193526375"
+    },
+    {
+      "type": "standard",
+      "title": "挨拶",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "こんにちは。こちらは国分寺市在宅避難者支援サービスです。本サービスを利用しますか？"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "digress_in": "does_not_return",
+      "dialog_node": "ようこそ"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "もしかして",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "上記のいずれにも該当し"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "もしかして"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "disaster japanese",
+  "language": "ja",
+  "description": ""
+}
