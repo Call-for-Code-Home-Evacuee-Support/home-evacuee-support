@@ -20,7 +20,7 @@ npm install
 
 #### Create .env file
 
-After refer [Functions deployment]() and get <API_ID>, <API_Secret> and <API_URL>, 
+After refer [Functions deployment](../../CloudFunctions/ApiServices/README.md) and get <API_ID>, <API_Secret> and <API_URL>, 
 you create .env file in the workspace and write down following statement.
 
 .env

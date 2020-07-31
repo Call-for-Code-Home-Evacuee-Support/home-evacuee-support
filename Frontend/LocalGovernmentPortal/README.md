@@ -50,7 +50,7 @@ The following values are related to Cloud Functions.
 * PACKAGE
 * ACTION
 
-The following values are related to App ID, becuase this appication authenticates a request with App ID.
+The following values are related to App ID, because this application authenticates a request with App ID.
 
 * TENANT_ID
 * CLIENT_ID
